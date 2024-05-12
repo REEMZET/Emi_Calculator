@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation.xml"
+    app:startDestination="@id/splashScreen">
+
+    <fragment
+        android:id="@+id/home2"
+        android:name="com.myloan.planner2024.Fragments.Home"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_home2_to_EMI"
+            app:destination="@id/EMI" />
+        <action
+            android:id="@+id/action_home2_to_CompareEmi"
+            app:destination="@id/CompareEmi" />
+        <action
+            android:id="@+id/action_home2_to_LoanAmount"
+            app:destination="@id/LoanAmount" />
+        <action
+            android:id="@+id/action_home2_to_tenure"
+            app:destination="@id/tenure" />
+        <action
+            android:id="@+id/action_home2_to_rateofinterest"
+            app:destination="@id/rateofinterest" />
+        <action
+            android:id="@+id/action_home2_to_moratorium"
+            app:destination="@id/moratorium" />
+        <action
+            android:id="@+id/action_home2_to_rdcalculation"
+            app:destination="@id/rdcalculation" />
+        <action
+            android:id="@+id/action_home2_to_fdcalculation"
+            app:destination="@id/fdcalculation" />
+        <action
+            android:id="@+id/action_home2_to_SICICalculate"
+            app:destination="@id/SICICalculate" />
+        <action
+            android:id="@+id/action_home2_to_PPFCalc"
+            app:destination="@id/PPFCalc" />
+        <action
+            android:id="@+id/action_home2_to_GSTCalc"
+            app:destination="@id/GSTCalc" />
+        <action
+            android:id="@+id/action_home2_to_vatCal"
+            app:destination="@id/vatCal" />
+        <action
+            android:id="@+id/action_home2_to_privacy_policy"
+            app:destination="@id/privacy_policy" />
+    </fragment>
+    <fragment
+        android:id="@+id/EMI"
+        android:name="com.myloan.planner2024.Fragments.EMI"
+        android:label="fragment_e_m_i"
+        tools:layout="@layout/fragment_e_m_i" />
+    <fragment
+        android:id="@+id/CompareEmi"
+        android:name="com.myloan.planner2024.Fragments.CompareEmi"
+        android:label="fragmentcompareemi"
+        tools:layout="@layout/fragment_compare_emi" />
+    <fragment
+        android:id="@+id/LoanAmount"
+        android:name="com.myloan.planner2024.Fragments.ComputeLoanAmount"
+        android:label="fragmentloanamount"
+        tools:layout="@layout/fragment_compute_loan_amount" />
+    <fragment
+        android:id="@+id/tenure"
+        android:name="com.myloan.planner2024.Fragments.LoanTenure"
+        android:label="fragmenttenure"
+        tools:layout="@layout/fragment_loan_tenure" />
+    <fragment
+        android:id="@+id/rateofinterest"
+        android:name="com.myloan.planner2024.Fragments.CalcInterest"
+        android:label="fragmentrateofintrest"
+        tools:layout="@layout/fragment_calc_interest" />
+    <fragment
+        android:id="@+id/moratorium"
+        android:name="com.myloan.planner2024.Fragments.Moratorium"
+        android:label="fragmentmoratorium"
+        tools:layout="@layout/fragment_moratorium" />
+    <fragment
+        android:id="@+id/rdcalculation"
+        android:name="com.myloan.planner2024.Fragments.RDCalculation"
+        android:label="fragmentrdcalc"
+        tools:layout="@layout/fragment_r_d_calculation" />
+    <fragment
+        android:id="@+id/fdcalculation"
+        android:name="com.myloan.planner2024.Fragments.FDcalculation"
+        android:label="fragmentfdcalc"
+        tools:layout="@layout/fragment_f_dcalculation" />
+    <fragment
+        android:id="@+id/SICICalculate"
+        android:name="com.myloan.planner2024.Fragments.SICICalculate"
+        android:label="SICICalculate" />
+    <fragment
+        android:id="@+id/PPFCalc"
+        android:name="com.myloan.planner2024.Fragments.PPFCalc"
+        android:label="fragment_p_p_f_calc"
+        tools:layout="@layout/fragment_p_p_f_calc" />
+    <fragment
+        android:id="@+id/GSTCalc"
+        android:name="com.myloan.planner2024.Fragments.GSTCalc"
+        android:label="fragment_g_s_t_calc"
+        tools:layout="@layout/fragment_g_s_t_calc" />
+    <fragment
+        android:id="@+id/vatCal"
+        android:name="com.myloan.planner2024.Fragments.VatCal"
+        android:label="fragment_vat_cal"
+        tools:layout="@layout/fragment_vat_cal" />
+    <fragment
+        android:id="@+id/splashScreen"
+        android:name="com.myloan.planner2024.Fragments.SplashScreen"
+        android:label="fragment_splash_screen"
+        tools:layout="@layout/fragment_splash_screen" >
+        <action
+            android:id="@+id/action_splashScreen_to_secure"
+            app:destination="@id/secure" />
+    </fragment>
+    <fragment
+        android:id="@+id/mainPage"
+        android:name="com.myloan.planner2024.Fragments.MainPage"
+        android:label="fragment_main_page"
+        tools:layout="@layout/fragment_main_page" >
+        <action
+            android:id="@+id/action_mainPage_to_home2"
+            app:destination="@id/home2" />
+        <action
+            android:id="@+id/action_mainPage_to_privacy_policy"
+            app:destination="@id/privacy_policy" />
+    </fragment>
+    <fragment
+        android:id="@+id/privacy_policy"
+        android:name="com.myloan.planner2024.Fragments.Privacy_policy"
+        android:label="fragment_privacy_policy"
+        tools:layout="@layout/fragment_privacy_policy" />
+    <fragment
+        android:id="@+id/secure"
+        android:name="com.myloan.planner2024.Fragments.Secure"
+        android:label="fragment_secure"
+        tools:layout="@layout/fragment_secure" >
+        <action
+            android:id="@+id/action_secure_to_easytoUse"
+            app:destination="@id/easytoUse" />
+    </fragment>
+    <fragment
+        android:id="@+id/easytoUse"
+        android:name="com.myloan.planner2024.Fragments.EasytoUse"
+        android:label="fragment_easyto_use"
+        tools:layout="@layout/fragment_easyto_use" >
+        <action
+            android:id="@+id/action_easytoUse_to_mainPage"
+            app:destination="@id/mainPage" />
+    </fragment>
+</navigation>
